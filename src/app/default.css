@@ -2,6 +2,8 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  color: #808080;
+  line-height: 35px;
 }
 
 header,
@@ -88,6 +90,8 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-bottom: 0;
+  color: #2c2c2c;
+  line-height: 54px;
 }
 
 h1 a,
@@ -101,32 +105,26 @@ h6 a {
 
 h1 {
   font-size: 48px;
-  line-height: auto;
 }
 
 h2 {
   font-size: 36px;
-  line-height: auto;
 }
 
 h3 {
   font-size: 28px;
-  line-height: auto;
 }
 
 h4 {
   font-size: 24px;
-  line-height: 1.2;
 }
 
 h5 {
   font-size: 20px;
-  line-height: auto;
 }
 
 h6 {
   font-size: 16px;
-  line-height: auto;
 }
 
 hr {

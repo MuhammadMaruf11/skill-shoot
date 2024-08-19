@@ -196,3 +196,413 @@
 }
 
 /* banner css end */
+
+/* trusted css start  */
+
+.trusted-area {
+  padding: 100px 0;
+}
+
+.trusted-title h2 {
+  font-size: 36px;
+}
+
+.trusted-title h2 span {
+  color: #cb8461;
+}
+
+.trusted-description {
+  width: 545px;
+  margin: 10px auto 50px;
+}
+
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+}
+
+.marquee-content-1 {
+  animation: marqueeOne 20s linear infinite;
+}
+
+.marquee-content-2 {
+  animation: marqueeTwo 20s linear infinite;
+}
+
+.cto-marquee-img img {
+  display: inline-block;
+  margin-right: 90px;
+}
+
+@keyframes marqueeOne {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeTwo {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-wrapper:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* trusted css end */
+
+/* advertise css start  */
+
+.advertise-area .container {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 31%, #f2e7db 31%);
+  border-radius: 12px;
+}
+
+.advertise-wrap {
+  padding: 52px 61px;
+}
+
+.advertise-title {
+  margin-bottom: 30px;
+}
+
+.advertise-title h2 span {
+  color: #cb8461;
+}
+
+.advertise-btn a {
+  padding: 15px 25px;
+  color: #fff;
+  background: #245d51;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.advertise-img {
+  text-align: end;
+}
+
+.advertise-img img {
+  margin-right: 143px;
+}
+
+.advertise-shapes {
+  position: absolute;
+}
+
+.advertise-shapes.shape-1 {
+  bottom: 240px;
+  left: 0;
+}
+
+.advertise-shapes.shape-2 {
+  bottom: 0;
+  right: 0;
+}
+.advertise-shapes.shape-3 {
+  bottom: 178px;
+  right: 404px;
+}
+.advertise-shapes.shape-4 {
+  bottom: 190px;
+  right: 80px;
+}
+.advertise-shapes.shape-5 {
+  bottom: 42px;
+  right: 387px;
+}
+.advertise-shapes.shape-6 {
+  bottom: 22px;
+  right: 123px;
+}
+
+/* advertise css end */
+
+/* what we do css start  */
+
+.what-we-do-area {
+  padding: 100px 0 30px;
+}
+
+.why-we-do-title {
+  margin-bottom: 20px;
+}
+
+.why-we-do-title h2 span {
+  color: #cb8461;
+}
+
+.why-we-do-description {
+  margin-bottom: 30px;
+  max-width: 424px;
+}
+
+.why-we-do-description p {
+  line-height: 35px;
+}
+
+.whey-we-do-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.whey-we-do-items .item-img {
+  margin-right: 13px;
+}
+
+.whey-we-do-items .item-text h4 {
+  font-size: 18px;
+}
+
+.whey-we-do-items .item-text p {
+  font-size: 12px;
+}
+
+.line-img {
+  margin: 25px 0;
+}
+
+.count-up-wrap .count-up {
+  display: inline-block;
+  margin-right: 67px;
+}
+
+.what-we-do-content {
+  margin-bottom: 60px;
+}
+
+.what-we-do-content .content-img {
+  margin-bottom: 30px;
+}
+
+.what-we-do-content .content-title {
+  margin-bottom: 10px;
+}
+.what-we-do-content .content-description {
+  max-width: 270px;
+}
+
+/* what we do css end */
+
+/* popular course css start  */
+
+.popular-course-area {
+  background: #245d51;
+  padding: 75px 0;
+}
+
+.popular-wrap {
+  margin-bottom: 50px;
+}
+
+.popular-title h2 {
+  color: #fff;
+}
+
+.popular-description {
+  max-width: 347px;
+  margin: auto;
+}
+
+.popular-description p {
+  color: #ffffff99;
+}
+
+.popular-course-slider .card {
+  border-radius: 20px;
+}
+
+.popular-course-slider .card .card-img {
+  position: relative;
+}
+
+.play-bg,
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popular-course-slider .card .card-img:before {
+  -webkit-animation: pulse-border 1.5s ease-out infinite;
+  animation: pulse-border 1.5s ease-out infinite;
+  background: #ffffff;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 64px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 64px;
+  z-index: 0;
+}
+
+.popular-course-slider .card .card-img:after {
+  background: #ffffff80;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 64px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  transition: all 0.2s;
+  width: 64px;
+  z-index: 1;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.popular-course-slider .card .card-title {
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.popular-course-slider .card-contents,
+.popular-course-slider .card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-course-slider .card-contents {
+  margin-bottom: 40px;
+}
+
+.popular-course-slider .card-item {
+  display: flex;
+  align-items: center;
+}
+
+.popular-course-slider .item-img {
+  margin-right: 10px;
+}
+
+.popular-course-slider .item-text h6 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.popular-course-slider .item-text p {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.popular-course-slider .card-bottom-wrap {
+  display: flex;
+  align-items: end;
+}
+
+.popular-course-slider .card-bottom-wrap h5 {
+  line-height: 36px;
+}
+.popular-course-slider .card-bottom-wrap span {
+  font-size: 12px;
+  line-height: 30px;
+}
+
+/* popular course css end */
+
+/* footer css start  */
+
+.footer-area {
+  padding: 120px 0 20px;
+  background: #245d51;
+  position: relative;
+}
+
+.footer-wrap {
+  margin-bottom: 150px;
+}
+
+.footer-title h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.footer-description {
+  margin-bottom: 65px;
+}
+
+.footer-description p {
+  line-height: 35px;
+  opacity: 0.6;
+  color: #fff;
+}
+
+.footer-input {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.input-wrap input,
+.btn-wrap button {
+  height: 60px;
+  border: 0;
+  outline: 0;
+  padding: 5px 30px;
+}
+
+.input-wrap input {
+  background-color: #ffffff14;
+  color: #ffffff;
+  width: 380px;
+}
+
+.btn-wrap button {
+  background: #cc8663;
+  font-size: 18px;
+  color: #ffffffcc;
+}
+
+.input-wrap input::placeholder {
+  color: #ffffffcc;
+}
+
+img.footer-shape-1 {
+  position: absolute;
+  top: 310px;
+  left: 370px;
+}
+
+img.footer-shape-2 {
+  position: absolute;
+  top: 215px;
+  right: 370px;
+}
+/* footer css end */
