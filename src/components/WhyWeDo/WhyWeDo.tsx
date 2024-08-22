@@ -4,6 +4,7 @@ import { useInView } from 'framer-motion';
 import CountUp from 'react-countup';
 import { useRef, useState } from "react";
 import { whatWeDoData } from "@/allData/whatWeDoData";
+import { motion } from 'framer-motion';
 
 
 const WhyWeDo = () => {
@@ -22,13 +23,28 @@ const WhyWeDo = () => {
                 <div className="row">
                     <div className="col-xl-6">
                         <div className="why-we-do-wrap">
-                            <div className="why-we-do-title">
+                            <motion.div
+                                className="why-we-do-title"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 0.3 }}
+                            >
                                 <h2>Why do we <span>exist?</span></h2>
-                            </div>
-                            <div className="why-we-do-description">
+                            </motion.div>
+                            <motion.div
+                                className="why-we-do-description"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 0.6 }}
+                            >
                                 <p>Because we know that many people or companies have the same problem when it comes to how difficult it is to improve their skills</p>
-                            </div>
-                            <div className="whey-we-do-items">
+                            </motion.div>
+                            <motion.div
+                                className="whey-we-do-items"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 0.9 }}
+                            >
                                 <div className="item-img">
                                     <Image src='/img/profile/profile-2.svg' width={71} height={71} alt="profile" />
                                 </div>
@@ -36,10 +52,15 @@ const WhyWeDo = () => {
                                     <h4>Jerony Pulquosta</h4>
                                     <p>CEO Skill Shoot</p>
                                 </div>
-                            </div>
-                            <div className="line-img">
+                            </motion.div>
+                            <motion.div
+                                className="line-img"
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ duration: 1, delay: 1.2 }}
+                            >
                                 <Image src='/img/shapes/shape-10.svg' width={431} height={1} alt="line" />
-                            </div>
+                            </motion.div>
                             <div className="count-up-wrap" ref={ref}>
                                 <div className="count-up">
                                     <h2>
@@ -61,19 +82,45 @@ const WhyWeDo = () => {
                     <div className="col-xl-6">
                         <div className="row">
                             {whatWeDoData?.map((item, index) => {
-                                return (<div className="col-md-6" key={index}>
-                                    <div className="what-we-do-content">
-                                        <div className="content-img">
+                                return (<motion.div
+                                    className="col-md-6"
+                                    key={index}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 1, delay: .4 * index }}
+                                >
+                                    <motion.div
+                                        className="what-we-do-content"
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.8, delay: 0.5 }}
+                                    >
+                                        <motion.div
+                                            className="content-img"
+                                            initial={{ opacity: 0, scale: 0.8 }}
+                                            whileInView={{ opacity: 1, scale: 1 }}
+                                            transition={{ duration: 0.8 }}
+                                        >
                                             <Image src={item?.img} width={50} height={50} alt="icon" />
-                                        </div>
-                                        <div className="content-title">
+                                        </motion.div>
+                                        <motion.div
+                                            className="content-title"
+                                            initial={{ opacity: 0, y: 20 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.8, delay: 0.2 }}
+                                        >
                                             <h4>{item?.title}</h4>
-                                        </div>
-                                        <div className="content-description">
+                                        </motion.div>
+                                        <motion.div
+                                            className="content-description"
+                                            initial={{ opacity: 0, y: 20 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.8, delay: 0.4 }}
+                                        >
                                             <p>{item?.description}</p>
-                                        </div>
-                                    </div>
-                                </div>)
+                                        </motion.div>
+                                    </motion.div>
+                                </motion.div>)
                             })}
                         </div>
                     </div>

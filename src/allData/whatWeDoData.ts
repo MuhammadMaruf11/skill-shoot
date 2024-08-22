@@ -20,6 +20,7 @@ export const whatWeDoData = [
   {
     img: "/img/what-we-do/icon-4.svg",
     title: "High Price",
-    description: "printing",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];

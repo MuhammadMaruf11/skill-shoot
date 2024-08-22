@@ -3,15 +3,14 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #808080;
-  line-height: 35px;
 }
 
-header,
+/* header,
 main,
 footer,
 section {
   overflow: hidden;
-}
+} */
 
 img {
   max-width: 100%;
@@ -38,6 +37,7 @@ a:hover {
 
 p {
   margin: 0;
+  line-height: 35px;
 }
 
 button,

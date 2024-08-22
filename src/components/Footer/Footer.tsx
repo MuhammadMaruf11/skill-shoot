@@ -4,27 +4,36 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
     const pathname = usePathname();
     return (
         <footer className='footer-area'>
             <div className="footer-shap-wrap">
-
                 <Image className="footer-shape-1" src='/img/shapes/shape-2.svg' width={60} height={39} alt='shape' />
                 <Image className="footer-shape-2" src='/img/shapes/shape-3.svg' width={89} height={94} alt='shape' />
-
             </div>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-8 col-lg-10 text-center">
                         <div className="footer-wrap">
-                            <div className="footer-title">
+                            <motion.div
+                                className="footer-title"
+                                initial={{ opacity: 0, y: -20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, ease: 'easeOut' }}
+                            >
                                 <h2>Subscribe to get notified about update</h2>
-                            </div>
-                            <div className="footer-description">
+                            </motion.div>
+                            <motion.div
+                                className="footer-description"
+                                initial={{ opacity: 0, y: 10 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+                            >
                                 <p>By subscribing with your mail, you will accept our privacy policy</p>
-                            </div>
+                            </motion.div>
                             <div className="footer-input">
                                 <div className="input-wrap">
                                     <input type="text" placeholder='Enter your email' />
