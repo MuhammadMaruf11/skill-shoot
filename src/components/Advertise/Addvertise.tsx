@@ -12,7 +12,7 @@ const Addvertise = () => {
         <section className="advertise-area">
             <div className="container">
                 <div className="row align-items-end">
-                    <div className="col-xl-6">
+                    <div className="col-lg-6">
                         <motion.div
                             className="advertise-wrap"
                             ref={ref}
@@ -32,15 +32,15 @@ const Addvertise = () => {
                             </motion.div>
                             <motion.div
                                 className="advertise-btn"
-                                initial={{ opacity: 0, y: 40, x: -40 }}
-                                whileInView={{ opacity: 1, y: 0, x: 0 }}
+                                initial={{ opacity: 0, }}
+                                whileInView={{ opacity: 1, }}
                                 transition={{ duration: 1, delay: .4 }}
                             >
                                 <Link href=''>Subscribe Course</Link>
                             </motion.div>
                         </motion.div>
                     </div>
-                    <div className="col-xl-6">
+                    <div className="col-lg-6 d-none d-lg-block">
                         <motion.div
                             className="advertise-img"
                             initial={{ opacity: 0, scale: 0.9 }}

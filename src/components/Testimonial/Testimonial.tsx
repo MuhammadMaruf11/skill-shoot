@@ -124,6 +124,10 @@ const Testimonial = () => {
                     </Swiper>
                 </motion.div>
             </motion.div>
+            <div className="testimonial-shapes d-lg-none">
+                <Image className="shape-1" src='/img/testimonial/shape-1.svg' width={38} height={34} alt="icon" />
+                <Image className="shape-2" src='/img/testimonial/shape-2.svg' width={17} height={18} alt="icon" />
+            </div>
         </section>
     );
 };

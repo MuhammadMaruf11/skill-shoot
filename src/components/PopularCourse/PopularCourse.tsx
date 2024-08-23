@@ -75,22 +75,20 @@ const PopularCourse = () => {
                 </div>
                 <div className="row">
                     <div className="col-12">
-                        <motion.div
+                        <div
                             className="popular-course-slider"
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
                         >
                             <Swiper
                                 spaceBetween={24}
                                 navigation={true}
                                 modules={[Navigation]}
                                 slidesPerView={3}
+                                centeredSlides={true}
                                 loop={true}
                                 breakpoints={{
                                     1600: { slidesPerView: 3 },
                                     1200: { slidesPerView: 3 },
-                                    1024: { slidesPerView: 3 },
+                                    1024: { slidesPerView: 2 },
                                     768: { slidesPerView: 2 },
                                     375: { slidesPerView: 1 },
                                 }}
@@ -186,9 +184,31 @@ const PopularCourse = () => {
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div
+                className="advertise-shapes-wrap d-lg-none"
+            >
+
+                <motion.div
+                    className="advertise-shapes shape-4"
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1, delay: .4 }}
+                >
+                    <Image src='/img/shapes/shape-7.svg' width={52} height={46} alt="advertise_shape" />
+                </motion.div>
+                <motion.div
+                    className="advertise-shapes shape-5"
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1, delay: .6 }}
+                >
+                    <Image src='/img/shapes/shape-8.svg' width={24} height={25} alt="advertise_shape" />
+                </motion.div>
+
             </div>
         </motion.section>
     );

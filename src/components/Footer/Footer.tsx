@@ -48,14 +48,14 @@ const Footer = () => {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3">
+                    <div className="col-md-3 text-center text-md-start order-md-1 order-2">
                         <div className="footer-logo">
                             <Link href='/'>
                                 <Image src='/img/logo/logo.svg' width={128} height={36} alt='footer_logo' />
                             </Link>
                         </div>
                     </div>
-                    <div className="col-lg-9 text-lg-end">
+                    <div className="col-md-9 text-md-end text-center order-md-2 order-1">
                         <div className="header-menu">
                             <ul>
                                 {navMenuData?.map((item, index) => {

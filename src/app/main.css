@@ -57,6 +57,54 @@
   color: #245d51;
 }
 
+.toggle-btn {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+/* Override the default burger menu styles */
+
+.times-icon {
+  width: 30px !important;
+  height: 30px !important;
+  filter: invert(1);
+}
+
+.bm-menu-wrap {
+  width: 100% !important;
+}
+
+.bm-menu {
+  padding: 30px;
+  background: #245d51;
+}
+
+.bm-item-list {
+  padding: 0;
+  margin: 0;
+}
+
+.bm-item-list li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.bm-item-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.bm-item-list li a.active {
+  font-weight: bold;
+  color: #cb8461;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 /* header css end */
 
 /* banner css start  */
@@ -69,12 +117,19 @@
 .banner-title {
   margin-bottom: 10px;
   position: relative;
+  max-width: 630px;
 }
 
 .banner-title h1 {
   font-size: 60px;
   color: #fff;
   line-height: 90px;
+}
+
+.banner-shape {
+  position: absolute;
+  top: 80px;
+  right: 172px;
 }
 
 .banner-description {
@@ -288,7 +343,7 @@
 }
 
 .trusted-description {
-  width: 545px;
+  max-width: 545px;
   margin: 10px auto 50px;
 }
 
@@ -337,6 +392,19 @@
 
 .marquee-wrapper:hover .marquee-content {
   animation-play-state: paused;
+}
+
+.trusted-brand-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  gap: 25px;
+}
+
+.trusted-brand-img:last-child {
+  grid-column: span 2;
 }
 
 /* trusted css end */
@@ -725,8 +793,6 @@ video {
 
 .popular-course-area .swiper .swiper-button-prev:hover,
 .popular-course-area .swiper .swiper-button-next:hover {
-  width: 67px;
-  height: 67px;
   background: #245d51;
   border-radius: 50%;
   display: flex;
@@ -819,6 +885,12 @@ video {
   color: #245d51;
 }
 
+.let-us-title-shape {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
 .let-us-description {
   margin-bottom: 35px;
 }
@@ -849,8 +921,6 @@ video {
 
 .item-icon img {
   display: inline-block;
-  width: 25px;
-  height: 25px;
 }
 
 /* let us css end */
@@ -933,9 +1003,12 @@ video {
 }
 
 .subscribe-grid {
-  display: flex;
+  display: grid;
   justify-content: center;
-  column-gap: 50px;
+  grid-column-gap: 14px;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 905px;
+  margin: auto;
 }
 
 .subscribe-price {
@@ -997,7 +1070,9 @@ video {
 
 .subscribe-wrap {
   max-width: 217px;
+  margin: auto;
 }
+
 .subscribe-wrap.popular {
   max-width: 292px;
   position: relative;
@@ -1155,8 +1230,6 @@ video {
 
 .testimonial-area .swiper .swiper-button-prev:hover,
 .testimonial-area .swiper .swiper-button-next:hover {
-  width: 67px;
-  height: 67px;
   background: #cb8461;
   border-radius: 50%;
   display: flex;

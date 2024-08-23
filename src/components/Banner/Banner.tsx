@@ -11,7 +11,7 @@ const Banner = () => {
         <section className='banner-area'>
             <div className="container">
                 <div className="row justify-content-between">
-                    <div className="col-xl-6">
+                    <div className="col-lg-6">
                         <motion.div
                             className="banner-wrap"
                             initial={{ opacity: 0 }}
@@ -27,14 +27,10 @@ const Banner = () => {
                             >
                                 <h1>There is always something new for us to learn</h1>
                                 <motion.div
+                                    className='banner-shape'
                                     initial={{ width: 0 }}
                                     whileInView={isInView ? { width: 220, height: 18 } : { width: 0, height: 0 }}
                                     transition={{ duration: 1 }}
-                                    style={{
-                                        position: "absolute",
-                                        top: "80px",
-                                        right: "172px",
-                                    }}
                                 >
                                     <Image
                                         src="/img/shapes/shape-1.svg"
@@ -107,7 +103,7 @@ const Banner = () => {
                             </motion.div>
                         </motion.div>
                     </div>
-                    <div className="col-xl-5">
+                    <div className="col-xxl-5 col-lg-6">
                         <div className="banner-img-wrap">
                             <div className="banner-img">
                                 <Image src='/img/bg/banner.svg' width={408} height={541} alt='banner' />

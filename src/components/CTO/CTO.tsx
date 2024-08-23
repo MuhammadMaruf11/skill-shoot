@@ -36,7 +36,7 @@ const CTO = () => {
                     </motion.div>
                 </motion.div>
                 <div className="row align-items-center">
-                    <div className="col-xl-7">
+                    <div className="col-lg-7">
                         <motion.div
                             className="cto-title"
                             initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ const CTO = () => {
                             <h2><span>Improve</span> your skills, and reach your career as soon as possible</h2>
                         </motion.div>
                     </div>
-                    <div className="col-xl-5">
+                    <div className="col-lg-5">
                         <motion.div
                             className="cto-btn"
                             initial={{ opacity: 0, y: 20 }}

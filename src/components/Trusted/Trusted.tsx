@@ -26,7 +26,7 @@ const Trusted = () => {
                             <motion.div
                                 className="trusted-description"
                                 initial={{ opacity: 0, y: 40 }}
-                                whileInView={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1 }}
                             >
                                 <p>
@@ -36,7 +36,7 @@ const Trusted = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row d-md-block d-none">
                     <div className="col-12">
                         <div className="marquee-wrapper">
                             <motion.div
@@ -68,6 +68,40 @@ const Trusted = () => {
                         </div>
                     </div>
                 </div>
+                <motion.div className="trusted-brand-wrap d-md-none">
+                    <motion.div className="trusted-brand-img"
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}
+                    >
+                        <Image src='/img/trusted/img-1.svg' width={100} height={21} alt='marquee_logo' />
+                    </motion.div>
+                    <motion.div className="trusted-brand-img text-end"
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}>
+                        <Image src='/img/trusted/img-2.svg' width={130} height={45} alt='marquee_logo' />
+                    </motion.div>
+                    <motion.div className="trusted-brand-img"
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}
+                    >
+                        <Image src='/img/trusted/img-3.svg' width={150} height={48} alt='marquee_logo' />
+                    </motion.div>
+                    <motion.div className="trusted-brand-img text-end"
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 }}>
+                        <Image src='/img/trusted/img-4.svg' width={150} height={46} alt='marquee_logo' />
+                    </motion.div>
+                    <motion.div className="trusted-brand-img text-center"
+                        initial={{ opacity: 0, scale: 0.75 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1 }}>
+                        <Image src='/img/trusted/img-5.svg' width={150} height={37} alt='marquee_logo' />
+                    </motion.div>
+                </motion.div>
             </div>
         </section>
     );

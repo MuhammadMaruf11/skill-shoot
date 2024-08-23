@@ -19,7 +19,7 @@ const LetUs = () => {
         >
             <div className="container">
                 <div className="row align-items-center justify-content-between">
-                    <div className="col-xl-5">
+                    <div className="col-xl-5 col-lg-6 d-lg-block d-none">
                         <motion.div
                             className="let-us-img-wrap"
                             initial={{ opacity: 0 }}
@@ -85,7 +85,7 @@ const LetUs = () => {
                             </div>
                         </motion.div>
                     </div>
-                    <div className="col-xl-6">
+                    <div className="col-lg-6">
                         <div className="let-us-text-wrap">
                             <motion.div
                                 className="let-us-title"
@@ -93,18 +93,13 @@ const LetUs = () => {
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                                 transition={{ duration: 0.8 }}
-                                style={{ position: 'relative' }}
                             >
                                 <h2>Let us <span>Skill Shoot</span></h2>
                                 <motion.div
+                                    className='let-us-title-shape'
                                     initial={{ width: 0 }}
                                     whileInView={isInView ? { width: 250, height: 18 } : { width: 0, height: 0 }}
                                     transition={{ duration: 1 }}
-                                    style={{
-                                        position: 'absolute',
-                                        top: '100%',
-                                        right: 0,
-                                    }}
                                 >
                                     <Image src="/img/shapes/shape-1.svg" width={250} height={18} alt="shape" />
                                 </motion.div>
@@ -126,7 +121,7 @@ const LetUs = () => {
                                 {letUsData?.map((item, index) => (
                                     <motion.div
                                         key={index}
-                                        className="col-md-6"
+                                        className="col-6"
                                         initial={{ opacity: 0, y: 20 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.5, delay: 0.5 * index }}

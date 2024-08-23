@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import "./default.css";
 import "./main.css";
+import "./responsive.css";
 
 
 export const metadata: Metadata = {
