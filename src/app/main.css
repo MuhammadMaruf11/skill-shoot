@@ -643,7 +643,15 @@
 video {
   display: block;
   width: 100%;
-  height: auto; /* Adjust this as needed */
+  height: auto; 
+}
+
+.popular-course-slider .card .card-img.playing:before,
+.popular-course-slider .card .card-img.playing:after {
+  display: none;
+  -webkit-animation: none;
+  animation: none;
+  transition: none;
 }
 
 .popular-course-slider .card .card-img:before {

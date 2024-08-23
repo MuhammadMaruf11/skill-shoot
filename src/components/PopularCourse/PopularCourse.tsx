@@ -37,6 +37,15 @@ const PopularCourse = () => {
         }
     };
 
+    const pauseVideo = (index: number) => {
+        const currentVideo = videoRefs.current[index];
+        if (playingIndex !== null && playingIndex !== index) {
+            videoRefs.current[playingIndex]?.pause();
+        } else {
+            currentVideo.pause();
+            setPlayingIndex(null);
+        }
+    };
 
     return (
         <motion.section
@@ -90,7 +99,7 @@ const PopularCourse = () => {
                                     1200: { slidesPerView: 3 },
                                     1024: { slidesPerView: 2 },
                                     768: { slidesPerView: 2 },
-                                    375: { slidesPerView: 1 },
+                                    320: { slidesPerView: 1 },
                                 }}
                             >
                                 {PopularCourseData?.map((item, index) => (
@@ -102,16 +111,19 @@ const PopularCourse = () => {
                                             transition={{ duration: 0.8 }}
                                         >
                                             <motion.div
-                                                className="card-img"
+                                                className={`card-img ${playingIndex === index ? 'playing' : ''}`}
                                                 initial={{ opacity: 0, scale: 0.9 }}
                                                 whileInView={{ opacity: 1, scale: 1 }}
                                                 transition={{ duration: 0.2 }}
                                             >
-                                                <div className="play-btn" onClick={() => handleVideoClick(index)}>
-                                                    <Image className="play-icon" src='/img/popular-course/play-icon.svg' width={36} height={36} alt="play_icon" />
-                                                    <Image className="play-bg" src='/img/popular-course/play-bg.svg' width={60} height={60} alt="play_bg" />
-                                                </div>
+                                                {playingIndex !== index && (
+                                                    <div className="play-btn" onClick={() => handleVideoClick(index)}>
+                                                        <Image className="play-icon" src='/img/popular-course/play-icon.svg' width={36} height={36} alt="play_icon" />
+                                                        <Image className="play-bg" src='/img/popular-course/play-bg.svg' width={60} height={60} alt="play_bg" />
+                                                    </div>
+                                                )}
                                                 <video
+                                                    onClick={() => pauseVideo(index)}
                                                     ref={(el) => {
                                                         if (el) {
                                                             videoRefs.current[index] = el;

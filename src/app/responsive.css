@@ -451,6 +451,13 @@
     display: none;
   }
 
+  .banner-img-icon img:nth-child(1),
+  .banner-img-icon img:nth-child(2),
+  .banner-img-icon img:nth-child(3) {
+    width: 34px;
+    height: 34px;
+  }
+
   .banner-img-icon img:nth-child(1) {
     top: 18px;
     left: 19px;
@@ -1008,6 +1015,10 @@
     position: relative;
   }
 
+  .footer-wrap {
+    margin-bottom: 0;
+  }
+
   .footer-title {
     max-width: 270px;
     margin: 0 auto 20px;
@@ -1052,7 +1063,7 @@
   .footer-shape-1 {
     top: auto;
     left: 52px;
-    bottom: 225px;
+    bottom: 175px;
   }
 
   .footer-shape-2 {
@@ -1060,7 +1071,7 @@
     height: 54px;
     top: auto;
     right: 30px;
-    bottom: 324px;
+    bottom: 224px;
     animation-name: shape1Animation;
   }
 }

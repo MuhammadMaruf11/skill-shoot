@@ -55,13 +55,13 @@ const Addvertise = () => {
                     className="advertise-shapes-wrap"
                     initial={{ opacity: 0 }}
                     whileInView={isInView ? { opacity: 1 } : { opacity: 0 }}
-                    transition={{ duration: 1, delay: .6 }}
+                    transition={{ duration: 1 }}
                 >
                     <motion.div
                         className="advertise-shapes shape-1"
-                        initial={{ y: -50, opacity: 0 }}
-                        whileInView={isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
-                        transition={{ duration: 1, delay: .8 }}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: .2 }}
                     >
                         <Image src='/img/shapes/shape-4.svg' width={61} height={60} alt="advertise_shape" />
                     </motion.div>
@@ -69,7 +69,7 @@ const Addvertise = () => {
                         className="advertise-shapes shape-2"
                         initial={{ y: -50, opacity: 0 }}
                         whileInView={isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
-                        transition={{ duration: 1, delay: 1 }}
+                        transition={{ duration: 1, delay: .4 }}
                     >
                         <Image src='/img/shapes/shape-5.svg' width={61} height={60} alt="advertise_shape" />
                     </motion.div>
@@ -77,7 +77,7 @@ const Addvertise = () => {
                         className="advertise-shapes shape-3"
                         initial={{ y: -50, opacity: 0 }}
                         whileInView={isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
-                        transition={{ duration: 1, delay: 1.2 }}
+                        transition={{ duration: 1, delay: .6 }}
                     >
                         <Image src='/img/shapes/shape-6.svg' width={56} height={57} alt="advertise_shape" />
                     </motion.div>
@@ -85,7 +85,7 @@ const Addvertise = () => {
                         className="advertise-shapes shape-4"
                         initial={{ y: -50, opacity: 0 }}
                         whileInView={isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
-                        transition={{ duration: 1, delay: 1.4 }}
+                        transition={{ duration: 1, delay: .8 }}
                     >
                         <Image src='/img/shapes/shape-7.svg' width={52} height={46} alt="advertise_shape" />
                     </motion.div>
@@ -93,7 +93,7 @@ const Addvertise = () => {
                         className="advertise-shapes shape-5"
                         initial={{ y: -50, opacity: 0 }}
                         whileInView={isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
-                        transition={{ duration: 1, delay: 1.6 }}
+                        transition={{ duration: 1, delay: 1 }}
                     >
                         <Image src='/img/shapes/shape-8.svg' width={24} height={25} alt="advertise_shape" />
                     </motion.div>
@@ -101,7 +101,7 @@ const Addvertise = () => {
                         className="advertise-shapes shape-6"
                         initial={{ y: -50, opacity: 0 }}
                         whileInView={isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0 }}
-                        transition={{ duration: 1, delay: 1.8 }}
+                        transition={{ duration: 1, delay: 1.2 }}
                     >
                         <Image src='/img/shapes/shape-9.svg' width={51} height={47} alt="advertise_shape" />
                     </motion.div>
