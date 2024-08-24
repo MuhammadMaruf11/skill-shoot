@@ -9,16 +9,14 @@
   left: 0;
   z-index: 99;
   box-shadow: 0 0 5px #245d5120;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: opacity 0.3s linear;
 }
 
 .header-area.hidden {
-  transform: translateY(-100%);
   opacity: 0;
 }
 
 .header-area.visible {
-  transform: inherit;
   opacity: 1;
 }
 
