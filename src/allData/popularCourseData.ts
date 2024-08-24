@@ -1,7 +1,7 @@
 export const PopularCourseData = [
   {
     cardImg: "/img/popular-course/card-1.svg",
-    video: "/video/nature-1.mp4",
+    video: "/video/nature.mp4",
     title: "Basics of learning team management",
     profileImg: "/img/popular-course/profile-1.svg",
     name: "Jone Owel",
@@ -13,7 +13,7 @@ export const PopularCourseData = [
   },
   {
     cardImg: "/img/popular-course/card-2.svg",
-    video: "/video/nature-2.mp4",
+    video: "/video/nature.mp4",
     title: "Learn basic database structure",
     profileImg: "/img/popular-course/profile-2.svg",
     name: "Roynaldo Jr",
@@ -25,7 +25,7 @@ export const PopularCourseData = [
   },
   {
     cardImg: "/img/popular-course/card-3.svg",
-    video: "/video/nature-3.mp4",
+    video: "/video/nature.mp4",
     title: "Create dynamic website with basic php",
     profileImg: "/img/popular-course/profile-3.svg",
     name: "Markus Low",
@@ -37,7 +37,7 @@ export const PopularCourseData = [
   },
   {
     cardImg: "/img/popular-course/card-1.svg",
-    video: "/video/nature-1.mp4",
+    video: "/video/nature.mp4",
     title: "Basics of learning team management",
     profileImg: "/img/popular-course/profile-1.svg",
     name: "Jone Owel",
@@ -49,7 +49,7 @@ export const PopularCourseData = [
   },
   {
     cardImg: "/img/popular-course/card-2.svg",
-    video: "/video/nature-2.mp4",
+    video: "/video/nature.mp4",
     title: "Learn basic database structure",
     profileImg: "/img/popular-course/profile-2.svg",
     name: "Roynaldo Jr",
@@ -61,7 +61,7 @@ export const PopularCourseData = [
   },
   {
     cardImg: "/img/popular-course/card-3.svg",
-    video: "/video/nature-3.mp4",
+    video: "/video/nature.mp4",
     title: "Create dynamic website with basic php",
     profileImg: "/img/popular-course/profile-3.svg",
     name: "Markus Low",
