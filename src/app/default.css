@@ -162,19 +162,19 @@ label {
 }
 
 *::-moz-selection {
-  background: #245d51;
+  background: var(--primary-color);
   color: #fff;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #245d51;
+  background: var(--primary-color);
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #245d51;
+  background: var(--primary-color);
   color: #fff;
   text-shadow: none;
 }
@@ -182,26 +182,26 @@ label {
 /* Placeholder */
 *::-moz-placeholder {
   color: #442a2a;
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   opacity: 1;
 }
 
 *::placeholder {
   color: #442a2a;
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   opacity: 1;
 }
 
 /* Button */
 .btn-theme {
   color: #fff;
-  border-color: #245d51;
-  background: #245d51;
+  border-color: var(--primary-color);
+  background: var(--primary-color);
 }
 .btn-theme:hover {
-  background: #245d51;
+  background: var(--primary-color);
   color: #fff;
-  border-color: #245d51;
+  border-color: var(--primary-color);
 }
 
 .btn-rounded {
@@ -283,7 +283,7 @@ label {
 }
 
 .text-theme {
-  color: #245d51;
+  color: var(--primary-color);
 }
 
 /* Others Common Css Here :) */

@@ -3,7 +3,7 @@ import { navMenuData } from "@/allData/navMenuData";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { slide as Menu } from 'react-burger-menu';
 
 
@@ -11,6 +11,33 @@ const Header = () => {
     const pathname = usePathname();
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const [headerStyle, setHeaderStyle] = useState('visible');
+
+    useEffect(() => {
+        let lastScrollY = window.scrollY;
+
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+
+            if (currentScrollY > (lastScrollY + 10)) {
+                setHeaderStyle('hidden');
+            } else if (currentScrollY < (lastScrollY - 10)) {
+                setHeaderStyle('visible');
+            }
+
+            lastScrollY = currentScrollY;
+            console.log('las', lastScrollY + 20);
+            console.log('cur', currentScrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
 
     const closeMenu = () => {
@@ -20,13 +47,13 @@ const Header = () => {
     const toggleMenu = () => {
         setIsMenuOpen((prevState) => {
             if (prevState) {
-                closeMenu(); // Handle any necessary cleanup here
+                closeMenu();
             }
             return !prevState;
         });
     };
     return (
-        <header className="header-area">
+        <header className={`header-area ${headerStyle}`}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-2 col-6">
@@ -63,9 +90,9 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="col-6 d-lg-none text-end">
-                        <Link href='' onClick={toggleMenu} className="toggle-btn">
+                        <button onClick={toggleMenu} className="toggle-btn">
                             <Image className={isMenuOpen ? 'times-icon' : ''} src={isMenuOpen ? '/img/icons/times.svg' : '/img/icons/menu.svg'} width={22.5} height={22.5} alt={isMenuOpen ? 'times' : 'menu'} />
-                        </Link>
+                        </button>
                     </div>
                     {/* Mobile Menu */}
                     <Menu

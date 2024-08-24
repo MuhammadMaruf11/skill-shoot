@@ -1,7 +1,7 @@
 /* header css start  */
 
 .header-area {
-  background: #245d51;
+  background: var(--primary-color);
   padding: 23px 0;
   position: sticky;
   width: 100%;
@@ -9,6 +9,17 @@
   left: 0;
   z-index: 99;
   box-shadow: 0 0 5px #245d5120;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.header-area.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.header-area.visible {
+  transform: inherit;
+  opacity: 1;
 }
 
 .header-menu ul {
@@ -47,14 +58,14 @@
 }
 
 .header-right ul li:last-child a {
-  background: #cb8461;
+  background: var(--secondary-color);
   padding: 12px 45px;
   border-radius: 8px;
 }
 
 .header-right ul li:last-child a:hover {
   background: #fff;
-  color: #245d51;
+  color: var(--primary-color);
 }
 
 .toggle-btn {
@@ -73,11 +84,12 @@
 
 .bm-menu-wrap {
   width: 100% !important;
+  top: 78px;
 }
 
 .bm-menu {
   padding: 30px;
-  background: #245d51;
+  background: var(--primary-color);
 }
 
 .bm-item-list {
@@ -93,16 +105,17 @@
 .bm-item-list li a {
   color: #fff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: var(--font-size-lg);
 }
 
 .bm-item-list li a.active {
   font-weight: bold;
-  color: #cb8461;
+  color: var(--secondary-color);
 }
 
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+  top: 78px;
 }
 
 /* header css end */
@@ -110,7 +123,7 @@
 /* banner css start  */
 
 .banner-area {
-  background: #245d51;
+  background: var(--primary-color);
   padding: 40px 0 0;
 }
 
@@ -152,7 +165,7 @@
 }
 
 .banner-btn a {
-  background: #cb8461;
+  background: var(--secondary-color);
   padding: 12px 25px;
   border-radius: 4px;
   display: inline-flex;
@@ -167,7 +180,7 @@
 
 @keyframes bannerBtn {
   0% {
-    background: #cb8461;
+    background: var(--secondary-color);
   }
 
   50% {
@@ -176,7 +189,7 @@
   }
 
   100% {
-    background: #cb8461;
+    background: var(--secondary-color);
   }
 }
 
@@ -339,7 +352,7 @@
 }
 
 .trusted-title h2 span {
-  color: #cb8461;
+  color: var(--secondary-color);
 }
 
 .trusted-description {
@@ -427,13 +440,13 @@
 }
 
 .advertise-title h2 span {
-  color: #cb8461;
+  color: var(--secondary-color);
 }
 
 .advertise-btn a {
   padding: 15px 25px;
   color: #fff;
-  background: #245d51;
+  background: var(--primary-color);
   border-radius: 4px;
   display: inline-block;
 }
@@ -515,7 +528,7 @@
 }
 
 .why-we-do-title h2 span {
-  color: #cb8461;
+  color: var(--secondary-color);
 }
 
 .why-we-do-description {
@@ -598,7 +611,7 @@
 /* popular course css start  */
 
 .popular-course-area {
-  background: #245d51;
+  background: var(--primary-color);
   padding: 75px 0;
 }
 
@@ -643,7 +656,7 @@
 video {
   display: block;
   width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 .popular-course-slider .card .card-img.playing:before,
@@ -741,7 +754,7 @@ video {
 .card-bottom-btn a {
   display: inline-block;
   padding: 12px 25px;
-  background: #245d51;
+  background: var(--primary-color);
   color: #fff;
   font-size: 12px;
   line-height: 30px;
@@ -755,14 +768,14 @@ video {
 
 @keyframes cardBtn {
   0% {
-    background: #245d51;
+    background: var(--primary-color);
   }
   50% {
     background: #45b39b;
     box-shadow: 0 0 5px 2px #45b39b80;
   }
   0% {
-    background: #245d51;
+    background: var(--primary-color);
   }
 }
 
@@ -801,7 +814,7 @@ video {
 
 .popular-course-area .swiper .swiper-button-prev:hover,
 .popular-course-area .swiper .swiper-button-next:hover {
-  background: #245d51;
+  background: var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -890,7 +903,7 @@ video {
 }
 
 .let-us-title h2 span {
-  color: #245d51;
+  color: var(--primary-color);
 }
 
 .let-us-title-shape {
@@ -958,7 +971,7 @@ video {
 }
 
 .cto-title h2 span {
-  color: #cb8461;
+  color: var(--secondary-color);
 }
 
 .cto-btn {
@@ -975,7 +988,7 @@ video {
 }
 
 .cto-btn a:first-child {
-  background: #cb8461;
+  background: var(--secondary-color);
   margin-right: 20px;
 }
 
@@ -987,7 +1000,7 @@ video {
 }
 
 .cto-btn a:last-child {
-  background: #245d51;
+  background: var(--primary-color);
 }
 
 /* cto css end */
@@ -1003,7 +1016,7 @@ video {
 }
 
 .subscribe-title h2 span {
-  color: #cb8461;
+  color: var(--secondary-color);
 }
 
 .subscribe-description {
@@ -1085,7 +1098,7 @@ video {
   max-width: 292px;
   position: relative;
   padding: 50px 30px 30px;
-  background: #245d51;
+  background: var(--primary-color);
   border-radius: 26px;
   box-shadow: 0 42px 34px #245d514b;
 }
@@ -1095,7 +1108,7 @@ video {
   top: 20px;
   right: 20px;
   padding: 6px 18px;
-  background: #cb8461;
+  background: var(--secondary-color);
   max-width: 121px;
   max-height: 27px;
   text-align: center;
@@ -1151,7 +1164,7 @@ video {
 
 .subscribe-wrap.popular .subscribe-btn a {
   display: inline-block;
-  background: #cb8461;
+  background: var(--secondary-color);
   color: #fff;
   padding: 5px 50px;
   border-radius: 24px;
@@ -1167,7 +1180,7 @@ video {
 }
 
 .testimonial-title h2 span {
-  color: #cb8461;
+  color: var(--secondary-color);
 }
 
 .testimonial-description {
@@ -1215,7 +1228,7 @@ video {
   position: absolute;
   width: var(--after-width, 0%);
   height: 6px;
-  background: #245d51;
+  background: var(--primary-color);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -1238,7 +1251,7 @@ video {
 
 .testimonial-area .swiper .swiper-button-prev:hover,
 .testimonial-area .swiper .swiper-button-next:hover {
-  background: #cb8461;
+  background: var(--secondary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1277,7 +1290,7 @@ video {
 
 .footer-area {
   padding: 120px 0 20px;
-  background: #245d51;
+  background: var(--primary-color);
   position: relative;
 }
 

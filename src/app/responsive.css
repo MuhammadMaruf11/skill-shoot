@@ -272,7 +272,7 @@
 
   .popular-course-slider .card .card-title {
     line-height: 21px;
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     margin-bottom: 20px;
   }
 
@@ -429,8 +429,8 @@
   }
 
   .banner-description p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .banner-wrap {
@@ -483,16 +483,16 @@
   }
 
   .trusted-title h2 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
   .trusted-description {
     max-width: 285px;
     margin: 20px auto 25px;
   }
   .trusted-description p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .advertise-area .container {
@@ -510,8 +510,8 @@
     margin: 0 auto 20px;
   }
   .advertise-title h2 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
 
   .advertise-shapes.shape-1,
@@ -548,8 +548,8 @@
   }
 
   .why-we-do-title h2 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
 
   .why-we-do-description {
@@ -558,8 +558,8 @@
   }
 
   .why-we-do-description p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .whey-we-do-items {
@@ -576,8 +576,8 @@
   }
 
   .whey-we-do-items .item-text h4 {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .whey-we-do-items .item-text p {
@@ -619,7 +619,7 @@
 
   .count-up-wrap .count-up p {
     font-size: 10px;
-    line-height: 30px;
+    line-height: var(--line-height-sm);
   }
 
   .what-we-do-content .content-title {
@@ -627,13 +627,13 @@
   }
 
   .what-we-do-content .content-title h4 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
 
   .what-we-do-content .content-description p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .popular-course-area {
@@ -674,13 +674,13 @@
   }
 
   .popular-title h2 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
 
   .popular-description p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .popular-course-area .swiper-slide {
@@ -768,7 +768,7 @@
 
   .let-us-title h2 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: var(--line-height-sm);
   }
 
   .let-us-title-shape {
@@ -781,8 +781,8 @@
   }
 
   .let-us-description p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
     margin-bottom: 10px;
   }
 
@@ -805,8 +805,8 @@
   }
 
   .item-title h6 {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .cto-area .container {
@@ -833,8 +833,8 @@
   }
 
   .cto-title h2 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
 
   .cto-btn {
@@ -858,8 +858,8 @@
   }
 
   .subscribe-title h2 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
 
   .subscribe-description {
@@ -868,8 +868,8 @@
   }
 
   .subscribe-description p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .subscribe-grid {
@@ -886,13 +886,13 @@
   }
 
   .subscribe-price h2 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
     font-weight: 600;
   }
 
   .subscribe-price span {
-    font-size: 12px;
+    font-size: var(--font-size-sm);
     line-height: 25px;
   }
 
@@ -908,7 +908,7 @@
   }
 
   .subscribe-list ul li span {
-    font-size: 12px;
+    font-size: var(--font-size-sm);
   }
 
   .subscribe-list ul li img {
@@ -943,8 +943,8 @@
   }
 
   .testimonial-title h2 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
 
   .testimonial-description {
@@ -953,8 +953,8 @@
   }
 
   .testimonial-description p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .testimonial-wrap {
@@ -1000,19 +1000,17 @@
   }
 
   .testimonial-name h4 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
 
   .testimonial-comment p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .footer-area {
     padding: 104px 0 53px;
-    background: #245d51;
-    position: relative;
   }
 
   .footer-wrap {
@@ -1025,9 +1023,9 @@
   }
 
   .footer-title h2 {
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     font-weight: 400;
-    line-height: 27px;
+    line-height: var(--line-height-lg);
   }
 
   .footer-description {
@@ -1036,8 +1034,8 @@
   }
 
   .footer-description p {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .footer-input {
@@ -1056,14 +1054,15 @@
   }
 
   .header-menu ul li a {
-    font-size: 12px;
-    line-height: 30px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .footer-shape-1 {
     top: auto;
     left: 52px;
     bottom: 175px;
+    animation-name: none;
   }
 
   .footer-shape-2 {
@@ -1072,6 +1071,6 @@
     top: auto;
     right: 30px;
     bottom: 224px;
-    animation-name: shape1Animation;
+    animation-name: none;
   }
 }
